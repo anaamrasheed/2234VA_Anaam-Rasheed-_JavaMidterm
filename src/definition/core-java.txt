@@ -1,34 +1,51 @@
 ***ANSWER ALL QUESTIONS BELOW***
 
 What is a programming language?
-Answer:
+Answer: A set of vocabulary and grammatical rules for instructing a computer or computing device to perform specific tasks.
 
 What is a JDK composed of? Define each components?
-Answer:
+Answer: It is composed of:
+-The Java Runtime Environment (JRE): provides minimum requirements for executing a Java application.
+                                     Consists of the JVM(Java virtual machine),core classes, and supporting files.
+
+-an interpreter/loader (Java):a stand-alone version of the Java interpreter built into the HotJava browser.
+The runtime interpreter provides the support to run Java executable programs in compiled, bytecode format.
+
+- a compiler (javac): used to compile Java source code files into executable Java bytecode classes. In Java, source code files have
+ the extension .java. The Java compiler takes files with this extension and generates executable class files with the .class extension.
+
+-an archiver (jar):
+-a documentation generator (Javadoc):
+-
 
 What is an IDE?
-Answer:
+Answer: Integrated Development Environment, enables programmers to consolidate the different aspects of writing a computer program.
+       IDEs increase programmer productivity by combining common activities of writing software into a single application:
+       editing source code, building executables, and debugging.
 
 What are some of the most popular Java IDEs available in the market?
-Answer:
+Answer: IntelliJ, Eclipse, BlueJ, JCreator
 
 Explain the entire java life cycle.
-Answer:
+Answer: Create a source code document, and run it through a source code compiler. Compiler creates a new document in Bytecode.
+        The JVM reads and runs the bytecode.
 
 What is a class?
-Answer:
+Answer:A class is a blueprint from which an object is created.
 
 What is an object?
-Answer:
+Answer: An instance of a class. All objects have states (instance variables-things it knows about itself) and
+behaviors(methods-things an object can do)
 
 What is the entry point of an application?
-Answer:
+Answer: the main method
 
 Why is the main() static?
-Answer:
+       Answer: It is part of its class. So it does not need an object to be called. Non-static methods or variables, you must create an object of that class
+       in order to call them.
 
 Which class is the superclass of all classes?
-Answer:
+Answer: the Object class
 
 What is difference between path and classpath variables?
 Answer:
@@ -37,13 +54,29 @@ What is the difference between an Interface and Abstract class?
 Answer:
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
-Answer:
+Answer: No, interfaces and abstract classes cannot be instantiated (cannot create objects of interfaces or abstract classes)
 
 What is Access Modifier?
 Answer:
 
 What is OOP? Define each OOP concept.
-Answer:
+Answer:Object-oriented Programming:
+
+-Abstraction:hiding complex/sensitive functionality from end-user by hiding methods/variables and wrapping them in overriden
+              functionality.
+-Encapsulation: process of binding data (variables) and code acting on the data (methods) together as a single unit..(data hiding)
+                When we don't want to allow the user/other people to change the states/variables of a class.
+
+-Inheritance: one object acquires all the properties and behaviors of a parent object. The idea behind inheritance in Java is
+that you can create new classes that are built upon existing classes. When you inherit from an existing class,
+you can reuse methods and fields of the parent class.
+
+-Polymorphism: ability to have multiple methods/functionality with the same name & same/similar functionality,
+                      but acting on different numbers/types of objects/variables
+
+                      2 Types of Polymorphism
+                          1 - Method Overloading (Compile-Time Polymorphism)
+                          2 - Method Overriding (Run-Time Polymorphism)
 
 What is Java Package and which package is imported by default?
 Answer:
@@ -73,7 +106,7 @@ What is a constructor?
 Answer:
 
 Can we have multiple constructors in a class?
-Answer:
+Answer: Yes
 
 If we don't have a constructor declared, what is called during the object creation?
 Answer:
@@ -85,7 +118,7 @@ What is "super" keyword in Java? What are some scenarios we would use it?
 Answer:
 
 What does JVM stand for?
-Answer:
+Answer: Java Virtual Machine
 
 Is JVM platform independent?
 Answer:
@@ -94,7 +127,7 @@ What version of Java are you using?
 Answer:
 
 What does JAR stand for?
-Answer:
+Answer: Java Archive
 
 What is the difference between JDK and JVM?
 Answer:
