@@ -4,7 +4,7 @@ What is a programming language?
 Answer: A set of vocabulary and grammatical rules for instructing a computer or computing device to perform specific tasks.
 
 What is a JDK composed of? Define each components?
-Answer: It is composed of:
+Answer: Java Developer Kit is composed of:
 -The Java Runtime Environment (JRE): provides minimum requirements for executing a Java application.
                                      Consists of the JVM(Java virtual machine),core classes, and supporting files.
 
@@ -16,7 +16,7 @@ The runtime interpreter provides the support to run Java executable programs in 
 
 -an archiver (jar):
 -a documentation generator (Javadoc):
--
+
 
 What is an IDE?
 Answer: Integrated Development Environment, enables programmers to consolidate the different aspects of writing a computer program.
@@ -41,26 +41,30 @@ What is the entry point of an application?
 Answer: the main method
 
 Why is the main() static?
-       Answer: It is part of its class. So it does not need an object to be called. Non-static methods or variables, you must create an object of that class
-       in order to call them.
+       Answer: It is part of its class. So it does not need an object to be called. Non-static methods or variables,
+       you must create an object of that class in order to call them.
 
 Which class is the superclass of all classes?
 Answer: the Object class
 
 What is difference between path and classpath variables?
-Answer:
+Answer:  The path environment variable is used to specify the set of directories which contains executional programs.
+         The class path environment variable is used to specify the location of the classes and packages.
 
 What is the difference between an Interface and Abstract class?
-Answer:
+Answer: An interface is 100% abstract since it can have only abstract methods. It can have default and static methods also.
+        An abstract class is not 100% abstract because it can have abstract and non-abstract (concrete) methods.
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
 Answer: No, interfaces and abstract classes cannot be instantiated (cannot create objects of interfaces or abstract classes)
 
 What is Access Modifier?
-Answer:
+Answer: Keywords that provide access to members of a class within a Java program. (Public, Private, Protected and Default)
+        A Java access modifier specifies which classes can access a given class and its fields, methods, and constructors.
+        We can use access modifiers for a class, its constructors, fields, and methods.
 
 What is OOP? Define each OOP concept.
-Answer:Object-oriented Programming:
+Answer:    Object-Oriented Programming:
 
 -Abstraction:hiding complex/sensitive functionality from end-user by hiding methods/variables and wrapping them in overriden
               functionality.
@@ -79,37 +83,58 @@ you can reuse methods and fields of the parent class.
                           2 - Method Overriding (Run-Time Polymorphism)
 
 What is Java Package and which package is imported by default?
-Answer:
+Answer: -Basically a folder that organizes a set of related classes and interfaces. Because software written in the Java programming
+        language can be composed of hundreds or thousands of individual classes,it makes sense to keep things organized by placing
+        related classes and interfaces into packages.
+        -The Java compiler imports the java.lang package internally by default.
 
 What is an API? List some API's that you have used so far.
-Answer:
+Answer: An API is a set of programming code that enables data transmission between one software product and another.
+        APIs let your product or service communicate with other products and services without having to know how they’re implemented.
+        This can simplify app development, saving time and money. When you’re designing new tools and products—or managing existing ones—
+        APIs give you flexibility; simplify design, administration, and use; and provide opportunities for innovation.
+
+        -Travel booking, Paypal
 
 Does java support multiple inheritance? Why or why not?
-Answer:
+Answer: Multiple inheritance is where a class inherits the properties and behavior of multiple classes.
+        No, Java does not support multiple inheritance. The reason is to prevent ambiguity. The compiler would not know which methods to call
 
 What is method overloading and when does it happen?
-Answer:
+Answer:  Two or more methods may have the same name if they differ in parameters (different number of parameters, different types of
+        parameters, or both).
 
 Explain exceptions in java and how to handle them.
-Answer:
+Answer:  An Exception is an unwanted event that interrupts the normal flow of the program.When an exception occurs program execution gets
+        terminated. In such cases we get a system generated error message.
+
+        Java provides two different options to handle an exception. You can either use the try-catch-finally approach to handle all kinds of exceptions.
+           Or you can use the try-with-resource approach which allows an easier cleanup process for resources.
 
 What is static keyword? When and how do we use it?
-Answer:
+Answer: It indicates that the particular member belongs to a class itself, rather than to an instance of that class.
+        This means that only one instance of that static member is created which is shared across all instances of the class.
+         We use static keyword for variables and methods that are common to all objects.
+        For a static method or variable, we do not need to create an object to call it. We can just reference the class name.
 
 What is final keyword? When and how do we use it?
-Answer:
+Answer: It is a non-access modifier applicable only to variables, methods and classes. Anything declared with a `final`
+        CANNOT be changed after initialization. Final variables are used to create constant variables. Final methods are used to
+        prevent method overriding. Final classes are used to prevent inheritance.
+
 
 Explain the difference between final, finally and finalize?
 Answer:
 
 What is a constructor?
-Answer:
+Answer: Constructor is a block of code that initializes the newly created object. Constructors are implicitly defined in every class,
+        by default (Default Constructor).
 
 Can we have multiple constructors in a class?
 Answer: Yes
 
 If we don't have a constructor declared, what is called during the object creation?
-Answer:
+Answer: the Default constructor. Default constructor is the constructor that accepts NO parameters.
 
 What is "this" keyword in Java? When would we use it?
 Answer:
@@ -121,34 +146,49 @@ What does JVM stand for?
 Answer: Java Virtual Machine
 
 Is JVM platform independent?
-Answer:
+Answer: Yes, JVM is platform independent.
 
 What version of Java are you using?
-Answer:
+Answer: 8
 
 What does JAR stand for?
 Answer: Java Archive
 
 What is the difference between JDK and JVM?
-Answer:
+Answer:  The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets.
+        It physically exists. JDK contains a private Java Virtual Machine (JVM) and a few other resources such as
+        an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc.
+        to complete the development of a Java Application. It is platform dependent.
+
+        The JVM (Java Virtual Machine) is an abstract machine. It's called a virtual machine because it doesn't physically exist.
+        It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs
+         which are written in other languages and compiled to Java bytecode. It is platform-independent.
+
 
 What is the difference between JVM and JRE?
-Answer:
+Answer: JRE is a software bundle which contains Java class libraries with necessary components to run Java code. It is platform dependent.
+        It is the part of Java that creates the JVM.
+
+        JVM executes Java byte code and provides an environment for executing it. It is platform independent, and It is the Java platform
+        component that executes source code. It does not include software development tools.
 
 Explain the difference between compile-time and run-time?
-Answer:
+Answer: Compile-time is the time period in which you are compiling your code. Run-time is the time period when a piece of software is executed.
 
 What is heap?
 Answer:
 
 How does Java manage its memory?
-Answer:
+Answer: Java uses an automatic memory management system called a garbage collector.
 
 What is the difference between String, StringBuffer and StringBuilder?
-Answer:
+Answer:   Strings are immutable while StringBuffer and StringBuilder are mutable. So, Strings cannot be changed when you use
+        the String class; whereas Strings can change if you use the StringBuffer and StringBuilder class.
 
 What is Singleton class?
-Answer:
+Answer: Used to restrict the instantiation of a class and ensures that only one instance of
+        the class exists in the JVM. In other words, a singleton class is a class that can have only one object
+        (an instance of the class) at a time per JVM instance.
 
 What is Serialization and Deserialization?
 Answer:
@@ -212,3 +252,5 @@ Answer:
 
 Explain what static binding and dynamic binding is?
 Answer:
+
+

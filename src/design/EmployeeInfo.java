@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
+public class EmployeeInfo extends AbstractEmployeeData implements Employee {
 
     /*
     This class should implement the Employee interface. You can do that by directly implementing it, however you must
@@ -20,7 +20,19 @@ public class EmployeeInfo {
     /*
      * Make sure to declare and use static, non-static & final fields
      */
+
+    //Create Variables
     static String companyName;
+    int companyDOB;
+    String companyLocation;
+
+    //private variable
+    private int companyContact;
+
+    //final
+    static final String companyLogo;
+
+    static {companyLogo="AAA";}
 
     /*
      You must implement the logic for below 2 methods and
@@ -31,22 +43,34 @@ public class EmployeeInfo {
     /*
      You must have/use multiple constructors
      */
-    public EmployeeInfo(int employeeId) {
 
+    public EmployeeInfo(int id, String name, String department, int hours, int daysOfWeek, int salary, String benefits, int dob, int ssn, String ftOrPT, boolean workspace, int employeeYearsOfExperience, String level, String nationality, int startDate, boolean isAlive, int laughForLaughs, int companyDOB, String companyLocation, int companyContact) {
+        super(id, name, department, hours, daysOfWeek, salary, benefits, dob, ssn, ftOrPT, workspace, employeeYearsOfExperience, level, nationality, startDate, isAlive, laughForLaughs);
+        this.companyDOB = companyDOB;
+        this.companyLocation = companyLocation;
+        this.companyContact = companyContact;
     }
 
-    public EmployeeInfo(String name, int employeeId) {
+    public EmployeeInfo(int laughForLaughs, int companyDOB, String companyLocation, int companyContact) {
+        super(laughForLaughs);
+        this.companyDOB = companyDOB;
+        this.companyLocation = companyLocation;
+        this.companyContact = companyContact;
+    }
 
+
+    public EmployeeInfo(int laughForLaughs) {
+        super(laughForLaughs);
     }
 
     /*
-     You need to implement the logic of this method as such:
-        It should calculate Employee bonus based on salary and performance.
-        It should return the total yearly bonus.
-            Example: 10% of salary for best performance, 8% of salary for average performance and so on.
-            You can set arbitrary number for performance, so you probably need to send 2 arguments.
-     *
-     */
+                     You need to implement the logic of this method as such:
+                        It should calculate Employee bonus based on salary and performance.
+                        It should return the total yearly bonus.
+                            Example: 10% of salary for best performance, 8% of salary for average performance and so on.
+                            You can set arbitrary number for performance, so you probably need to send 2 arguments.
+                     *
+                     */
     public static int calculateEmployeeBonus(int numberOfYearsWithCompany) {
         int total = 0;
         return total;
@@ -73,6 +97,51 @@ public class EmployeeInfo {
         // Calculate pension
 
         return total;
+    }
+
+    @Override
+    public int employeeId() {
+        return 0;
+    }
+
+    @Override
+    public String employeeName() {
+        return null;
+    }
+
+    @Override
+    public void assignDepartment() {
+
+    }
+
+    @Override
+    public int calculateSalary() {
+        return 0;
+    }
+
+    @Override
+    public void benefitLayout() {
+
+    }
+
+    @Override
+    public int employeeDOB() {
+        return 0;
+    }
+
+    @Override
+    public int employeeSSN() {
+        return 0;
+    }
+
+    @Override
+    public String employeePTOrFT() {
+        return null;
+    }
+
+    @Override
+    public boolean employeeIsWorkingFromHome() {
+        return false;
     }
 
     private static class DateConversion {

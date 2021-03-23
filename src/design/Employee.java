@@ -28,4 +28,28 @@ public interface Employee {
     //employee benefit
     void benefitLayout();
 
+    //employee DOB will return date of birth
+    int employeeDOB();
+
+    //employee ssn will return social security number
+    int employeeSSN();
+
+    //employeePTorFT() will return full time or part time
+    String employeePTOrFT();
+
+    //employeeIsWorkingFromHome() will return location of workspace
+    boolean employeeIsWorkingFromHome();
+
+    //employeeExperience() will return employee's previous experience
+    int employeeExperience();
+
+    //employeeJobLevel() will return level of Job level
+
+
+
+
+
+
+
+
 }
