@@ -28,7 +28,7 @@ public class Palindrome {
         //At the end of each loop, decrement the index value by 1. so go from 4, 3, 2, 1, 0
 
 
-        for(int index=s1.length()-1; index>-1; index--){
+        for(int index=s1.length()-1; index>-1 ; index--){
             reverse+=s1.charAt(index);                  //at the end of each loop, add each character of s1 onto
                                                         //the empty string "reverse".
                                                         //so starting from the last character of s1 (M), add M for 0th

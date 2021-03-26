@@ -1,79 +1,153 @@
-***ANSWER ALL QUESTIONS BELOW***
-
 Why do we need data structure?
-Answer:
+Answer: Programmers use data structure to store and organize data and we use algorithms to
+manipulate the data in those structures. Data structures provide a means to manage large amounts of data efficiently
+or uses such as large databases and internet indexing services.
 
 What are the various operations that can be performed on different data structures?
-Answer:
+Answer: There are 8 operations that can be performed on Data Structures. These are:
+ 1. Creation: Creating a data structure according to the requirement.
+   eg: an integer array of 5 values.
+  int ar[5];   //ar is the name of array
+  2. Insertion: Inserting values into data structure. There can be three ways to insert elements into
+  data structure: at the beginning, at the end and at the desired location.
+  3. Traversal: Visiting each element of the data structure at least once.
+  4. Search: Searching of an element in the given number of elements. The elements can be searched in two ways:
+  a. Linear Search: Simplest way of searching an element.
+  b. Binary Search: It works on divide and conquer rule.
+  5. Sorting: Rearranging the elements in a paritcular order, ascending or descending order.
+   There are several sorting algorithms:
+  a. Bubble Sort
+  b. Selection Sort
+  c. Quick Sort
+  d. Merge Sort
+  e. Heap Sort
+  6. Merging: Combining the data items of two sorted files into single file in the sorted form.
+  7. Updation: Updating the current value in the data structure with some new value.
+  8. Deletion: Deleting the undesired value from the data structure. There are 3 ways to delete a value
+  from data structure. These are: from the beginning, from the end and from the given location.
 
 When would we use data structures in the real world?
-Answer:
+Answer: There are many examples when we would use data structure in the real world. One way is when storing
+phone numbers in our phone. The software puts all our contacts in an array.
 
 What is an Array?
-Answer:
+Answer: An array is a collection of similar types of data. The length of an array is established when the array
+is created. For example, if we want to store the names of 100 people then we can create an array of the string
+type that can store 100 names.
 
 What is the difference between Array and ArrayList?
-Answer:
+Answer: Both Array and Array List are used to store elements, which can be either primitive or objects in case of
+Array and only objects in case of ArrayList in Java. The main difference between Array vs ArrayList in Java is the
+ static nature of the Array and the dynamic nature of ArrayList. Once created you can not change the size of Array
+ but ArrayList can re-size itself when needed. Another notable difference between ArrayList and Array is that Array
+ is part of core Java programming and has special syntax and semantics support in Java, While ArrayList is part of
+ the Collection framework along with other popular classes like Vector, Hashtable, HashMap or LinkedList.
 
 What is a LinkedList?
-Answer:
+Answer: The LinkedList class is almost identical to the ArrayList. LinkedList class is a collection which can contain
+many objects of the same type, just like the ArrayList. The LinkedList class has all of the same methods as the
+ArrayList class because they both implement the List interface. This means that you can add items, change items,
+remove items and clear the list in the same way.
 
 How is an Array different from LinkedList?
-Answer:
+Answer: Similar to arrays in Java, LinkedList is a linear data structure. However LinkedList elements are not
+stored in contiguous locations like arrays, they are linked with each other using pointers.
 
 What is a Queue?
-Answer:
+Answer: Java Queue is an interface available in java. util package and extends java. util.
+Just like Java List, Java Queue is a collection of ordered elements (Or objects) but it performs insert
+and remove operations differently. We can use Queue to store elements before processing those elements.
 
 What is a Stack (not Java memory - refers to data structure)?
-Answer:
+Answer: Stack is a linear data structure which follows a particular order in which the operations are performed.
+The order may be LIFO(Last In First Out) or FILO(First In Last Out).
 
 What is FIFO and LIFO?
-Answer:
+Answer: FIFO is an abbreviation for first in, first out. It is a method for handling data structures where the
+first element is processed first and the newest element is processed last. LIFO is an abbreviation for
+Last in, first out is same as fist in, last out (FILO). It is a method for handling data structures where the last
+element is processed first and the first element is processed last.
 
 Explain Big O Notation?
-Answer:
+Answer: Big O notation is a convenient way to describe how fast a function is growing. A function's Big-O notation
+is determined by how it responds to different inputs. Example: How much slower is it if we give it a list of 1000
+things to work on instead of a list of 1 thing?
 
 What is the best case to search an element from an array?
-Answer:
+Answer:There are several sorting algorithms in data structure. If the data elements are in unsorted order,
+then of course the time complexity is O(n). Because in this case , we have to traverse entire array one by one.
 
 What is the worst case to search an element from an array?
-Answer:
+Answer: In the worst case, it takes O(n) time. We implement Linear search in this case .
 
 Describe what a tree data structure is?
-Answer:
+Answer: A tree is a non-linear data structure where the elements stored within the data structure have relationship
+between them. Tree is a very flexible, versatile and powerful data structures that can be used to represent data items
+possessing hierarchical relationship between parent and descendants and in turns descendants and so on.
 
 Describe what a graph data structure is?
-Answer:
+Answer: A graph data structure mainly stores connected data, for example, a network of people or a network of cities.
+A graph data structure typically consists of nodes or points called vertices. Each vertex is connected to another
+vertex using links called edges.
 
 What is the difference between the HashTable and HashMap?
-Answer:
+Answer: HashMap and Hashtable store key/value pairs in a hash table. When using a Hashtable or HashMap, we specify
+an object that is used as a key, and the value that you want linked to that key.  HashMap is non synchronized.
+It is not-thread safe and can’t be shared between many threads without proper synchronization code whereas Hashtable
+is synchronized. HashMap allows one null key and multiple null values whereas Hashtable doesn’t allow any null key
+or value. HashMap is generally preferred over HashTable if thread synchronization is not needed.
+
 
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model
 Answer:
 
 How do HashMaps work in Java? How do they store values, and when are they useful?
-Answer:
+Answer: HashMap in Java works on hashing principles. It is a data structure which allows us to store object and
+retrieve it in constant time O(1) provided we know the key.
 
 What is ArrayIndexOutOfBoundsException in java? When does it occur?
-Answer:
+Answer: The ArrayIndexOutOfBoundsException occurs whenever we are trying to access any item of an array at
+an index which is not present in the array. In other words, the index may be negative or exceed the size
+of an array.
 
 What are the different ways of copying an array into another array?
-Answer:
+Answer:There are mainly four different ways to copy all elements of one array into another array in Java.
+       Manually - Using variable assignment. This method has side effects as changes to the element of
+        an array reflects on both the places. To prevent this side effect following are the better ways
+        to copy the array elements.
+       Arrays.copyOf() - Create a new array of the same length and copy each element.
+       System.arraycopy() - Use System.arraycopy() method. arraycopy can be used to copy a subset of an array.
+       Object.clone() - Use the clone method of the array. Clone methods create a new array of the same size.
 
 What is DFS and BFS?
-Answer:
+Answer: BFS stands for Breadth First Search. DFS stands for Depth First Search. Breadth First Search is a vertex based
+technique for finding a shortest path in graph. It uses a Queue data structure which follows first in first out.
+Depth First Search is a edge based technique. It uses the Stack data structure, performs two stages, first visited
+vertices are pushed into stack and second if there is no vertices then visited vertices are popped.
 
 What is Recursion?
-Answer:
+Answer: In recursion, a function or method has the ability of calling itself to solve the problem. The process of
+recursion involves solving a problem by turning it into smaller varieties of itself. In short, Recursion is defined as
+defining anything in terms of itself. Recursion is used to solve problems involving iterations, in reverse order.
 
 What are linear and non-linear data Structures?
-Answer:
-
+Answer: A Linear data structure has data elements arranged in sequential manner and each member element is connected
+to its previous and next element. This connection helps to traverse a linear data structure in a single level and in
+single run.
+A non-linear data structure has no set sequence of connecting all its elements and each element can have multiple paths
+to connect to other elements. Such data structures supports multi-level storage and often cannot be traversed in single
+run.
 
 Outline different sorting algorithms and their time complexities:
+Time Complexity: Time Complexity is defined as the number of times a particular instruction set is executed rather
+than the total time is taken. It is because the total time taken also depends on some external factors like the compiler
+used, processor’s speed, etc.
 
 
-Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+
+
+Draw a table with time complexity in which it will summarize all the data structure feature's advantages and
+disadvantages.
   a) In terms of Accessing elements:
   b) In terms of Inserting elements:
   c) In terms of Searching elements:
